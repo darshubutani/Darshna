@@ -1,0 +1,227 @@
+<script>
+//01/11/2022
+    // console.log("JS is fun");
+    // let js =("Amazing");
+    // if(js===("Amazing")) alert("Js is fun")
+/*    
+// Assignment 
+    //Values and Variables 
+    let myCountry = "India";
+    let myContinent = "Asia";
+    let myPopulation = 1662930406618; 
+    var JsIsFun = true;
+
+    console.log(myCountry);
+    console.log(myContinent);
+    console.log(myPopulation);
+    console.log(JsIsFun);
+    //Data Types 
+    let isIsland = false;
+    const language = "Hindi";
+
+    console.log(isIsland);
+    console.log(myPopulation);
+    console.log(myCountry);
+    console.log(language);
+
+    //Basic Operators
+    let halfPopulation = myPopulation / 2;
+    console.log(halfPopulation);
+    myPopulation = myPopulation+1;
+    console.log(myPopulation);
+    let finlandPopulation = 6000000;
+    let result = (myPopulation > finlandPopulation)
+    console.log(result);
+    let averagePopulation = 660000000;
+     result =(myPopulation > averagePopulation )
+     console.log(result);
+    let description = 'Portugal is in Europe, and its 11 million people speak portuguese';
+    //description.italics();
+    console.log (description.italics());
+*/
+
+//Coding Challenge #1
+
+    /*Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height ** 2 = mass / (height * height)
+     (mass in kg and height in meter). 
+
+Your tasks: 1. Store Mark's and John's mass and height in variables 2. Calculate both their BMIs using the formula (you can even implement both versions)
+ 3. Create a Boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John. 
+Test data: § Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall. 
+§ Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall. 
+ */
+/*
+const johnWeight = 92;
+const johnHeight = 1.95;
+const markWeight = 78;
+const markHeight = 1.69;
+
+var johnBMI= johnWeight / (johnHeight*johnHeight);
+var markBMI= markWeight/ (markHeight*markHeight);
+var markHigherBMI = (markBMI>johnBMI)
+
+console.log(markHigherBMI);
+console.log('John BMI '+johnBMI);
+console.log('Mark BMI '+markBMI); */
+
+//Strings and Template Literals 
+//Portugal is in Europe, and its 11 million people speak portuguese
+    /*let country = "Portugal";
+    let continent = "Europe";
+    let population = 11000000; 
+    let language = "portuguese";
+
+    console.log(country + " is in "+ continent+ " and it has "+ population+" people speak "+ language);    */
+
+    //Taking Decisions: if / else Statements 
+
+  /* If your country's population is greater that 33 million, log a string like this to the console: 'Portugal's population is above average'.
+   Otherwise, log a string like 'Portugal's population is 22 million below average' (the 22 is the average of 33 minus the country's population) 
+   
+   2. After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original 
+ */
+/*
+ let averagePopulation = 33;
+ let portugalPopulation = 11; 
+
+ if(portugalPopulation > averagePopulation){
+    console.log("Portugal's population is above average");
+ }
+else{
+    console.log(" Portugal's population is "+ (averagePopulation-portugalPopulation) +" million below average");
+} */
+
+/*Coding Challenge #2 
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it. 
+Your tasks: 1. Print a nice output to the console, saying who has the higher BMI. The message is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+ 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!" 
+*/
+
+/*
+const johnWeight = 92;
+const johnHeight = 1.95;
+const markWeight = 78;
+const markHeight = 1.69;
+
+var johnBMI= johnWeight / (johnHeight**2);
+var markBMI= markWeight/ (markHeight*markHeight);
+var markHigherBMI = (markBMI>johnBMI)
+if(markHigherBMI=true){
+    console.log("Mark's BMI "+"("+markBMI.toFixed(2)+")"+ " is higher than John's BMI "+"("+johnBMI.toFixed(2)+")" );
+} 
+else{
+    console.log("John's BMI "+"("+johnBMI.toFixed(2)+")"+" is higher than mark's BMI "+"("+markBMI.toFixed(2)+")" );
+}*/
+
+//Type Conversion and Coercion 
+/*LECTURE: Type Conversion and Coercion 1. Predict the result of these 5 operations without executing them: 
+ '9' - '5';
+ '19' - '13' + '17'; 
+ '19' - '13' + 17; 
+ '123' < 57;
+ 5 + 6 + '4' + 9 - 4 - 2;
+ 2. Execute the operations to check if you were right */
+/*
+ console.log('9' - '5');
+ console.log('19' - '13' + '17');
+ console.log('19' - '13' + 17);
+ console.log( '123' > 57);
+ console.log(5 + 6 + '4' + 9 - 4 - 2);
+ */
+
+ //Equality Operators: == vs. === 
+   /* let numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+    if (numNeighbours===1){
+        console.log('Only 1 border!');
+    }
+    else if(numNeighbours>1){
+        console.log(numNeighbours+" borders");
+    }
+    else{
+        console.log("No borders");
+    }*/
+    //Logical Operators 
+/*
+    let country = "Portugal"
+    let population = 11; 
+    let language = "portuguese";
+    let isIsland = false;
+   if(language="English" && population>50 && !isIsland) {
+    console.log("You should live in Portugal :)");
+   }
+   else{
+    console.log("Portugal does not meet your criteria :(");
+   } */
+//02/11/2022
+   //Coding Challenge #3 
+  // Dolphins and Koalas
+/*
+  let dolphinsOne = 97 ;
+  let dolphinsTwo = 112;
+  let dolphinsThree = 101;
+  let koalasOne = 109;
+  let koalasTwo = 95;
+  let koalasThree = 106;
+  let aveDolphine;
+  let aveKoalas;
+//Calculate the average score for each team, using the test data below 
+aveDolphine = (dolphinsOne + dolphinsTwo + dolphinsThree)/3;
+aveKoalas= (koalasOne + koalasTwo + koalasThree)/3; 
+
+console.log("Average score of Dolphine is: " + aveDolphine);
+console.log("Average score of Koalas is: "+ aveKoalas);
+//Compare the team's average scores to determine the winner of the competition
+
+
+    if(aveDolphine>aveKoalas  && aveDolphine>=100){
+        console.log("Dolphines are winner");
+    }
+    else if(aveDolphine==aveKoalas && (aveDolphine && aveKoalas >=100) ){
+        console.log("It'a a draw between dolphines and koalas");
+    }
+    else if(aveDolphine<aveKoalas  && aveKoalas >=100){
+        console.log("Koalas are winner");
+    }
+    else{
+        console.log(" No team wins the trophy ");
+    } */
+// The switch Statement 
+ /*
+let language = prompt("Enter any language: ");
+switch (language){
+    case  ('chinese'):
+    case ('mandarin'):
+        console.log( 'MOST number of native speakers!' );
+        break;
+    case('spanish'):
+        console.log('2nd place in number of native speakers' );
+        break;
+    
+     case('english'):
+        console.log( '3rd place' );
+        break;
+
+     case('hindi'):
+        console.log( 'Number 4' );
+        break;
+
+    case('arabic'):
+        console.log( '5th most spoken language' );
+        break;
+    default:
+        console.log(language +" is also a good language.")
+}*/
+
+// The Conditional (Ternary) Operator 
+/*
+const population = 11;
+const portugalPopulation =  population > 33 ? " Portugal's population is above average" : "Portugal's population is below average";
+console.log (portugalPopulation); */
+
+//Coding Challenge #4 
+/*let bill = 275 ;
+
+let tip = (bill>=50 && bill<=300) ? (bill*0.15) :(bill*0.2);
+let totalBill = bill + tip;
+console.log("Bill is: "+ bill+"\nTip is: "+tip+ "\nTotal value is: "+ totalBill);*/
+</script>
